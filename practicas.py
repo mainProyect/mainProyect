@@ -1,5 +1,6 @@
 """Se crea una clase PersonalePrincipal, la
 cual tiene distintos metodos de interaccion."""
+import random
 class PersonajePrincipal:
     def  __init__(self, nombre):
         if not isinstance(nombre,str):
@@ -13,6 +14,13 @@ class PersonajePrincipal:
     def subirNivel(self):
         self.nivel+1
         return self.nivel
+    def calcularDaño(self,enemigo,multiplicador=1.0)
+        aleatorio=random.randint(-5,5)
+        daño=(self.ataque*multiplicador)-enemigo.defensa+aleatorio
+        return max(daño,0)
+    def atacar(self):
+        daño=calcularDaño(enemigo)
+        print({self.non)
     def cambiarDeClase(self):
         if self.nivel=5:
             print(f'{self.nombre}, ah alcanzado el nivel 5, cambia de clase.')
