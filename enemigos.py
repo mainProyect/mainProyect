@@ -9,3 +9,20 @@ class Gobling:
         self.attSpeed= 3
     def __str__(self):
         return f'{self.nombre}\n    Ataque -> {self.ataque}\n   Defensa -> {self.defensa}\n    Speed -> {self.speed}\n    Velocidad de ataque -> {self.attSpeed}\n    VIDA -> {self.vida}\n    MANA -> {self.mana}'
+class bossGoblin:
+    def __init__(self,):
+        self.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
