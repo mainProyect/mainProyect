@@ -20,9 +20,9 @@ class PersonajePrincipal:
         return max(daño,0)
     def atacar(self):
         daño=calcularDaño(enemigo)
-        print({self.non)
+        print({self.nombre})
     def cambiarDeClase(self):
-        if self.nivel=5:
+        if self.nivel==5:
             print(f'{self.nombre}, ah alcanzado el nivel 5, cambia de clase.')
             return Mago(self, nombre)
         return self
