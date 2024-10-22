@@ -34,7 +34,7 @@ class PersonajePrincipal:
         return f'{self.nombre}\n    Ataque -> {self.ataque}\n   Defensa -> {self.defensa}\n    Speed -> {self.speed}\n    Velocidad de ataque -> {self.attSpeed}'
 class Mago(PersonajePrincipal):
     def __init__(self, nombre):
-        super().__init__(self,nombre)
+        super().__init__(nombre)
 
 class Gobling:
     def __init__(self,nombre):
