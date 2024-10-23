@@ -12,8 +12,12 @@ class PersonajePrincipal:
         self.attSpeed = 2
         self.nivel=1
     """Metodo para subir de nivel a personaje mientas este Sea menor a 100"""
-    def subirNivel(self):
-        self.nivel+1
+    def subirNivel(self, incrementoDeAtaque=1, incrementoDefensa = 1, incrementoAttspeed=1):
+        self.nivel+=1
+        self.ataque+=incrementoDeAtaque
+        self.incrementoDefensa+=incrementoDefensa
+        self.incrementoAttspeed+=incrementoAttspeed
+
         return self.nivel
     """Metodo para calcular el daño de un personaje hacia otro"""
     def calcularDaño(self,enemigo,multiplicador=1.0):
