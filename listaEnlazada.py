@@ -20,3 +20,4 @@ class ListaEnlazada:
             print(actual.dato.__str__())
             actual = actual.next
 listaArmasOneHand = ListaEnlazada()
+listaPersonajes = ListaEnlazada()
