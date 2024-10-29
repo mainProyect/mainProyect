@@ -32,21 +32,20 @@ class PersonajePrincipal:
                    incrementoCastingSpeed=1,
                    incrementoSpeed=1,
                    incrementoAttspeed=1):
-        self.nivel+=1
-        self.vida = 100
-        self.mana = 100
-        self.pAttack= incrementoPAttack
-        self.mAttack = incrementoMAttack
-        self.mDef=incrementoMDef
-        self.pDef=incrementoPDef
-        self.accuracy=incrementoAccuracy
-        self.evacion=incrementoEvacion
-        self.rateCritical= incrementoRateCritical
-        self.castingSpeed= incrementoCastingSpeed
-        self.speed = incrementoSpeed
-        self.attSpeed = incrementoAttspeed
-        
-
+        if nivel<100:          
+            self.nivel+=1
+            self.vida = 100
+            self.mana = 100
+            self.pAttack= incrementoPAttack
+            self.mAttack = incrementoMAttack
+            self.mDef=incrementoMDef
+            self.pDef=incrementoPDef
+            self.accuracy=incrementoAccuracy
+            self.evacion=incrementoEvacion
+            self.rateCritical= incrementoRateCritical
+            self.castingSpeed= incrementoCastingSpeed
+            self.speed = incrementoSpeed
+            self.attSpeed = incrementoAttspeed
         return self.nivel
     """Metodo para calcular el daño de un personaje hacia otro"""
     def calcularDaño(self,enemigo,multiplicador=1.0):
@@ -65,10 +64,8 @@ class PersonajePrincipal:
         return self
     def  __str__(self):
         return f'{self.nombre}\n    Ataque fisico-> {self.pAttack}\n   Ataque magico -> {self.mAttack}\n    Defensa magica = {self.mDef}\n    Defensa fisica = {self.pDef}\n    Precision = {self.accuracy}\n    Evacion = {self.evacion}\n    Critico = {self.rateCritical}\n    Velocidad de casteo = {self.castingSpeed}\n    Speed -> {self.speed}\n    Velocidad de ataque -> {self.attSpeed}'
-class Mago(PersonajePrincipal):
-      def __init__(self):
-          super.__init__(nombre):
-          self.ataque
+
+                       
             
 
 
