@@ -2,6 +2,7 @@
 cual tiene distintos metodos de interaccion."""
 import random
 from enemigos import Gobling
+from armasOneHand
 class PersonajePrincipal:
     def  __init__(self, nombre):
         if not isinstance(nombre,str):
@@ -20,6 +21,8 @@ class PersonajePrincipal:
         self.speed = 1
         self.attSpeed = 2
         self.nivel=1
+        self.manoUno = []
+        self.manoDos = []
         self.ataquesEspeciales = []
     """Metodo para subir de nivel a personaje mientas este Sea menor a 100"""
     def subirNivel(self, incrementoPAttack=1, incrementomMAttack=1,incrementoPDef = 1,incrementoMAttack=1,incrementoMDef=1,incrementoAccuracy=1,incrementoEvacion=1,incrementoRateCritical=1,incrementoCastingSpeed=1,incrementoSpeed=1,incrementoAttspeed=1):
@@ -39,6 +42,8 @@ class PersonajePrincipal:
             self.attSpeed = incrementoAttspeed
         return self
     """Metodo para calcular el daño de un personaje hacia otro"""
+    def agregarArmaUna(self, ):
+
     def calcularDaño(self,enemigo,multiplicador=1.0):
         aleatorio=random.randint(-5,5)
         daño=(self.pAttack*multiplicador)-enemigo.defensa+aleatorio
