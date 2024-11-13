@@ -55,9 +55,8 @@ class BossGobling:
 
 miBoss = BossGobling("Gobling Boss")
 miGobling = Gobling("Gobling")
-print(miGobling.__str__())
 miBoss.calcularDaño(miGobling)
-print(miGobling.__str__())
+
 
 
 
