@@ -53,9 +53,9 @@ class BossGobling:
     def __str__(self):
         return f'{self.nombre}\n    Ataque fisico-> {self.pAttack}\n   Ataque magico -> {self.mAttack}\n    Defensa magica = {self.mDef}\n    Defensa fisica = {self.pDef}\n    Precision = {self.accuracy}\n    Evacion = {self.evacion}\n    Critico = {self.rateCritical}\n    Velocidad de casteo = {self.castingSpeed}\n    Speed -> {self.speed}\n    Velocidad de ataque -> {self.attSpeed}'
 
-miBoss = BossGobling("Gobling Boss")
-miGobling = Gobling("Gobling")
-miBoss.calcularDaño(miGobling)
+
+
+
 
 
 
