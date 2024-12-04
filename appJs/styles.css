@@ -1,0 +1,58 @@
+/*Estilo general*/
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: rgb(36, 152, 182);
+    color: #222;
+}
+header h1 {
+    margin: 0;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+/*Area principal*/
+main{
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+main img{
+    max-width: 100%;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 5px;
+}
+/*Pie de pagina*/
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+footer ul li a{
+    color: white;
+    text-decoration: none;
+}
