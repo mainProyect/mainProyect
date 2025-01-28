@@ -25,4 +25,39 @@ class Combate:
         for personaje in self.participantes:
             print(f" - {personaje}")
 combate = Combate()
+import sqlite3
+conexion = sqlite3.connect("miBaseDeDatos.db")
+cursor = conexion.cursor()
+cursor.execute("""
+    CREATE TABLE IF NOT EXISTS Usuarios(
+        id INTEGER PRIMARY KEY,
+        nombre TEXT NOT NULL,
+        edad INTEGER NOT NULL,
+        profesion TEXT NOT NULL
+        )
+""")
+cursor.execute("""
+    CREATE TABLE Pedidos(
+        id INTEGER PRIMARY KEY,
+        usuarioId INTEGER NOT NULL,
+        producto TEXT NOT NULL,
+        cantidad INTEGER NOT NULL,
+        stock INTEGER NOT NULL,
+        fecha DATE DEFAULT CURRENT_DATE,
+        FOREIGN KEY (usuarioId) REFERENCES Usuarios(id)
+               )
+""")
+cursor.execute("""
+    INSERT INTO Usuarios (nombre, edad, profesion) VALUES
+        ('Miguel',30, "Tecnico en programacion" ),
+        ('Luis', 40,"EjemploUno"),
+        ('Ana',50, "Politologa );
+""")
+conexion.commit()
+
+cursor.execute("SELECT edad FROM Usuarios")
+usuarios = cursor.fetchall()
+print(usuarios)
+conexion.close()
+
 
